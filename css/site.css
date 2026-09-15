@@ -36,7 +36,7 @@
 }
 
 html {
-  scrollbar-gutter: stable;
+  overflow-x: hidden;
 }
 
 body {
@@ -49,6 +49,11 @@ body {
   background: var(--page);
   display: flex;
   flex-direction: column;
+}
+
+body.home {
+  height: 100svh;
+  overflow: hidden;
 }
 
 a {
@@ -83,8 +88,9 @@ body > nav {
 }
 
 nav .logo {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-family: inherit;
+  font-size: 1.05rem;
+  font-weight: 650;
   letter-spacing: var(--track);
   color: var(--on-ink);
   text-decoration: none;
@@ -118,7 +124,7 @@ main {
   flex: 1;
   width: min(40rem, calc(100% - 3rem));
   margin: 0 auto;
-  padding: 3.25rem 0 4.5rem;
+  padding: 2.5rem 0 2.75rem;
 }
 
 .intro h1 {
@@ -158,8 +164,9 @@ main {
 
 .product h2 {
   margin: 0;
+  font-family: inherit;
   font-size: 1.35rem;
-  font-weight: 700;
+  font-weight: 650;
   letter-spacing: var(--track);
 }
 
