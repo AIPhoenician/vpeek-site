@@ -1,0 +1,273 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --ink: #08080a;
+  --ink-elevated: #121216;
+  --surface: #ffffff;
+  --surface-muted: #f4f5f4;
+  --line: #e2e4e2;
+  --text: #1a1a1a;
+  --text-muted: #5a5c5a;
+  --signal: #24963f;
+  --on-ink: #ffffff;
+  --on-ink-muted: rgba(255, 255, 255, 0.72);
+  --on-ink-soft: rgba(255, 255, 255, 0.86);
+  --font: "Outfit", "Segoe UI", sans-serif;
+  --tracking-wordmark: -0.055em;
+  --nav-h: 56px;
+  --radius-sm: 2px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --dur-fast: 150ms;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-gutter: stable;
+}
+
+body {
+  margin: 0;
+  min-height: 100svh;
+  font-family: var(--font);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--text);
+  background: var(--surface-muted);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  color: var(--text);
+  text-underline-offset: 0.15em;
+}
+
+a:hover {
+  color: var(--ink);
+}
+
+body > nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 24px;
+  background: var(--ink);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+nav .logo {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--on-ink);
+  text-decoration: none;
+  letter-spacing: var(--tracking-wordmark);
+}
+
+nav .logo:hover {
+  color: var(--on-ink);
+  opacity: 0.92;
+}
+
+nav .links {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-left: auto;
+}
+
+nav .links a {
+  color: rgba(255, 255, 255, 0.78);
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding: 0.4rem 0.65rem;
+}
+
+nav .links a:hover,
+nav .links a[aria-current="page"] {
+  color: var(--on-ink);
+}
+
+.hero {
+  margin-top: var(--nav-h);
+  min-height: calc(72svh - var(--nav-h));
+  background: var(--ink);
+  color: var(--on-ink);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4rem 24px 4.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 8vw, 4rem);
+  font-weight: 700;
+  letter-spacing: var(--tracking-wordmark);
+  line-height: 1.05;
+}
+
+.hero .lead {
+  margin: 1.25rem auto 0;
+  max-width: 28rem;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--on-ink-soft);
+}
+
+.hero .cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 1.75rem;
+}
+
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.75rem;
+  padding: 0.7rem 1.35rem;
+  background: var(--on-ink);
+  color: var(--ink);
+  border: 1px solid var(--on-ink);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.95rem;
+  letter-spacing: 0.01em;
+}
+
+.button:hover {
+  background: rgba(255, 255, 255, 0.9);
+  color: var(--ink);
+}
+
+.button-ghost {
+  background: transparent;
+  color: var(--on-ink);
+  border-color: rgba(255, 255, 255, 0.28);
+}
+
+.button-ghost:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--on-ink);
+  border-color: rgba(255, 255, 255, 0.5);
+}
+
+main.page {
+  margin-top: var(--nav-h);
+  flex: 1;
+  padding: 3rem 24px 4rem;
+}
+
+.wrap {
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.section {
+  padding: 3.5rem 24px 4.5rem;
+}
+
+.section h2 {
+  margin: 0 0 1.5rem;
+  font-size: 1.35rem;
+  font-weight: 600;
+}
+
+.card {
+  display: block;
+  max-width: 40rem;
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 1.35rem;
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:hover {
+  border-color: #c8cbc8;
+}
+
+.card h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: var(--tracking-wordmark);
+}
+
+.card p {
+  margin: 0.45rem 0 0;
+  color: var(--text-muted);
+}
+
+.prose {
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.prose h1 {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  letter-spacing: var(--tracking-wordmark);
+}
+
+.prose p {
+  margin: 0.7rem 0;
+}
+
+.crumb {
+  margin: 0 0 1rem;
+  font-size: 0.9rem;
+}
+
+.crumb a {
+  color: var(--text-muted);
+  text-decoration: none;
+}
+
+.crumb a:hover {
+  color: var(--ink);
+  text-decoration: underline;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1.25rem 24px;
+  background: var(--ink);
+  color: var(--on-ink-muted);
+  font-size: 0.9rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  align-items: center;
+}
+
+footer a {
+  color: var(--on-ink-muted);
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: var(--on-ink);
+}
+
+footer .end {
+  margin-left: auto;
+}
