@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BetterCtrlV privacy</title>
+  <meta name="description" content="BetterCtrlV keeps copies and cuts on your PC only. Nothing is sent to us.">
+  <link rel="canonical" href="https://forumcore.ai/betterctrlv/privacy.html">
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
+  <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <meta name="theme-color" content="#08080a">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BetterCtrlV privacy">
+  <meta property="og:description" content="BetterCtrlV keeps copies and cuts on your PC only.">
+  <meta property="og:url" content="https://forumcore.ai/betterctrlv/privacy.html">
+  <meta property="og:image" content="https://forumcore.ai/img/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BetterCtrlV privacy">
+  <meta name="twitter:description" content="BetterCtrlV keeps copies and cuts on your PC only.">
+  <meta name="twitter:image" content="https://forumcore.ai/img/og.png">
+  <link rel="stylesheet" href="/css/site.css">
+  <script src="/js/locale-boot.js"></script>
+</head>
+<body>
+  <nav aria-label="Main">
+    <a href="/" class="logo">ForumCore</a>
+    <div class="links">
+      <a href="/betterctrlv/">BetterCtrlV</a>
+    </div>
+  </nav>
+  <main class="page">
+    <div class="prose">
+      <p class="crumb"><a href="/betterctrlv/">BetterCtrlV</a></p>
+      <h1>Privacy</h1>
+      <p class="updated">Last updated: 18 September 2026</p>
+      <p>This policy is for BetterCtrlV, a product of ForumCore (Petr Jaroch, IČO 03330389).</p>
+      <p>BetterCtrlV keeps copies and cuts on <strong>your PC only</strong>, in <code>%LOCALAPPDATA%\BetterCtrlV</code> under your Windows user profile. We do not receive clipboard contents, keystrokes, or analytics. There is no BetterCtrlV account and no BetterCtrlV server for this product. The packaged app does not declare an internet capability (<code>internetClient</code>).</p>
+      <p>The ledger file is encrypted with Windows DPAPI for your Windows user. If that file cannot be decrypted, BetterCtrlV starts with an empty list rather than reading it as plaintext. Text longer than about 1&nbsp;MB is not added to the ledger (the live clipboard still works). Uninstall does not automatically delete this folder.</p>
+      <p>A keyboard hook is used so paste chords work. It does not log typing. It looks at keys only while Ctrl is held, and only when Ctrl is the sole modifier. Ctrl+C, Ctrl+X, Ctrl+Shift+V, and AltGr are never swallowed. Known password-manager windows are skipped. Clipboard formats that ask not to be included in clipboard history are honoured, so those copies are not stored in the ledger.</p>
+      <p>To clear one line, hold Ctrl+V and press K. To clear the list and the live clipboard, hold L. The tray menu also has Clear history and Open data folder (the folder contains the encrypted ledger, settings, and a small diagnostic log).</p>
+      <p>This website is static. It does not load scripts from other sites. The typeface is stored with the site. A first-party cookie named <code>forumcore_locale</code> stores your language choice for one year.</p>
+      <p>Purchase and refunds are handled by the Microsoft Store and your Microsoft account. We do not see your card number.</p>
+      <p>Questions: <a href="mailto:contact@forumcore.ai">contact@forumcore.ai</a>, subject line Privacy Request. Full terms: <a href="/betterctrlv/terms.html">Terms of Service</a>.</p>
+    </div>
+  </main>
+  <footer>
+    <a href="/betterctrlv/privacy.html">Privacy</a>
+    <a href="/betterctrlv/terms.html">Terms</a>
+    <div class="lang-switch" data-lang-switch aria-label="Language"></div>
+    <span class="end">Made in the EU</span>
+  </footer>
+  <script src="/js/i18n.js" defer></script>
+</body>
+</html>
