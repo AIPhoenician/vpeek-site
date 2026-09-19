@@ -232,6 +232,13 @@ main {
   font-size: 1rem;
 }
 
+.intro .lead {
+  margin: 1.15rem 0 0;
+  color: var(--text);
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+
 .rule {
   height: 1px;
   background: var(--line);

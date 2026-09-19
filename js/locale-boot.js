@@ -163,6 +163,10 @@
     return /\/betterctrlv\/(privacy|terms)\.html$/i.test(String(pathname || '/'));
   }
 
+  function isLegacyPath(pathname) {
+    return /^\/vpeek(\/|$)/i.test(String(pathname || '/'));
+  }
+
   function isDocumentPath(pathname) {
     var p = String(pathname || '/');
     if (p.indexOf('/js/') === 0 || p.indexOf('/css/') === 0 || p.indexOf('/img/') === 0 || p.indexOf('/fonts/') === 0) {
@@ -194,6 +198,7 @@
     prefix: prefix,
     matchNavigator: matchNavigator,
     isLegalPath: isLegalPath,
+    isLegacyPath: isLegacyPath,
   };
 
   try {
@@ -201,6 +206,7 @@
     if (!isDocumentPath(path)) return;
     if (isSearchBot()) return;
     if (isLegalPath(path)) return;
+    if (isLegacyPath(path)) return;
 
     var fromPath = pathLocale(path);
     if (fromPath) {
