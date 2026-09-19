@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — mantenha Ctrl+V para uma cópia mais antiga</title>
-  <meta name="description" content="Toque em Ctrl+V para colar como habitualmente. Mantenha premido para escolher uma cópia mais antiga. A área de transferência fica no seu PC.">
+  <meta name="description" content="Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/pt-PT/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/pt-PT/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — mantenha Ctrl+V para uma cópia mais antiga">
-  <meta property="og:description" content="Toque em Ctrl+V para colar como habitualmente. Mantenha premido para escolher uma cópia mais antiga. A área de transferência fica no seu PC.">
+  <meta property="og:description" content="Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — mantenha Ctrl+V para uma cópia mais antiga">
-  <meta name="twitter:description" content="Toque em Ctrl+V para colar como habitualmente. Mantenha premido para escolher uma cópia mais antiga. A área de transferência fica no seu PC.">
+  <meta name="twitter:description" content="Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, mantenha Ctrl+V no Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/pt-PT/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "pt-PT",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Toque em Ctrl+V para colar como habitualmente. Mantenha premido para escolher uma cópia mais antiga. A área de transferência fica no seu PC.",
-      "featureList": [
-        "Copiar e cortar continuam a funcionar como habitualmente. Ao cortar, o original é removido.",
-        "Toque em Ctrl+V para colar o conteúdo mais recente, como habitualmente. Mantenha Ctrl+V premido para escolher entre a área de transferência atual (V) e as suas últimas nove cópias. O mais recente aparece primeiro.",
-        "1–9, S e D, passe o rato ou clique para escolher uma linha. K remove uma linha. Mantenha L premida para limpar. Solte Ctrl para colar na janela em que estava."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/pt-PT/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/pt-PT/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/pt-PT/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "pt-PT",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/pt-PT/betterctrlv/"
+        "description": "Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows.",
+        "featureList": [
+          "Copiar e cortar continuam a funcionar como habitualmente. Ao cortar, o original é removido.",
+          "Toque em Ctrl+V para colar o conteúdo mais recente, como habitualmente. Mantenha Ctrl+V premido para escolher entre a área de transferência atual (V) e as suas últimas nove cópias. O mais recente aparece primeiro.",
+          "1–9, S e D, passe o rato ou clique para escolher uma linha. K remove uma linha. Mantenha L premida para limpar. Solte Ctrl para colar na janela em que estava."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/pt-PT/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/pt-PT/betterctrlv/",
+        "name": "BetterCtrlV — mantenha Ctrl+V para uma cópia mais antiga",
+        "description": "Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows.",
+        "inLanguage": "pt-PT",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/pt-PT/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/pt-PT/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/pt-PT/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/pt-PT/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/pt-PT/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/pt-PT/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Principal">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Lembra-se do que copia. Mantenha Ctrl+V premido para escolher uma cópia mais antiga. Um produto da ForumCore.</p>
-      <p class="lead">Histórico da área de transferência para Windows. Toque em Ctrl+V para colar como habitual, ou mantenha premido para escolher uma cópia mais antiga. O histórico fica no seu PC, encriptado para a sua conta Windows. Compre na Microsoft Store.</p>
+      <p class="meta">Histórico da área de transferência no seu PC. Mantenha Ctrl+V para uma cópia mais antiga. Um produto da ForumCore.</p>
+      <p class="lead">Toque em Ctrl+V para colar como habitual, ou mantenha premido para escolher entre a área de transferência atual e as suas últimas nove cópias. O histórico fica no seu PC, encriptado para a sua conta Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Toque em <kbd>Ctrl+V</kbd> para colar o conteúdo mais recente, como habitualmente. Mantenha <kbd>Ctrl+V</kbd> premido para escolher entre a área de transferência atual (V) e as suas últimas nove cópias. O mais recente aparece primeiro.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> e <kbd>D</kbd>, passe o rato ou clique para escolher uma linha. <kbd>K</kbd> remove uma linha. Mantenha <kbd>L</kbd> premida para limpar. Solte Ctrl para colar na janela em que estava.</li>
     </ol>
-    <p class="note">O histórico fica no seu PC, encriptado para a sua conta Windows. As cópias de gestores de palavras-passe não são guardadas. Compre na Microsoft Store.</p>
+    <p class="note">O histórico fica no seu PC, encriptado para a sua conta Windows. As cópias de gestores de palavras-passe não são guardadas. Experimente 15 dias e depois compre na Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Privacidade</a>

@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — החזיקו Ctrl+V כדי לבחור עותק ישן</title>
-  <meta name="description" content="הקש Ctrl+V כדי להדביק כרגיל. החזק כדי לבחור העתק ישן יותר. לוח הגזירים נשאר במחשב שלך.">
+  <meta name="description" content="היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/he/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/he/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — החזיקו Ctrl+V כדי לבחור עותק ישן">
-  <meta property="og:description" content="הקש Ctrl+V כדי להדביק כרגיל. החזק כדי לבחור העתק ישן יותר. לוח הגזירים נשאר במחשב שלך.">
+  <meta property="og:description" content="היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — החזיקו Ctrl+V כדי לבחור עותק ישן">
-  <meta name="twitter:description" content="הקש Ctrl+V כדי להדביק כרגיל. החזק כדי לבחור העתק ישן יותר. לוח הגזירים נשאר במחשב שלך.">
+  <meta name="twitter:description" content="היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, החזיקו Ctrl+V ב-Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/he/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "he",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "הקש Ctrl+V כדי להדביק כרגיל. החזק כדי לבחור העתק ישן יותר. לוח הגזירים נשאר במחשב שלך.",
-      "featureList": [
-        "העתקה וגזירה ממשיכות לעבוד כרגיל. בעת גזירה, הפריט המקורי מוסר.",
-        "הקש Ctrl+V כדי להדביק את ההעתק העדכני ביותר, כרגיל. החזק את Ctrl+V כדי לבחור מתוך לוח הגזירים הנוכחי (V) ותשעת ההעתקים האחרונים. הפריט החדש ביותר מופיע ראשון.",
-        "1–9, S ו־D, העבר את הסמן או לחץ כדי לבחור שורה. K מסיר שורה. החזק את L כדי לנקות. שחרר את Ctrl כדי להדביק בחלון שבו היית."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/he/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/he/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/he/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "he",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/he/betterctrlv/"
+        "description": "היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.",
+        "featureList": [
+          "העתקה וגזירה ממשיכות לעבוד כרגיל. בעת גזירה, הפריט המקורי מוסר.",
+          "הקש Ctrl+V כדי להדביק את ההעתק העדכני ביותר, כרגיל. החזק את Ctrl+V כדי לבחור מתוך לוח הגזירים הנוכחי (V) ותשעת ההעתקים האחרונים. הפריט החדש ביותר מופיע ראשון.",
+          "1–9, S ו־D, העבר את הסמן או לחץ כדי לבחור שורה. K מסיר שורה. החזק את L כדי לנקות. שחרר את Ctrl כדי להדביק בחלון שבו היית."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/he/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/he/betterctrlv/",
+        "name": "BetterCtrlV — החזיקו Ctrl+V כדי לבחור עותק ישן",
+        "description": "היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.",
+        "inLanguage": "he",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/he/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/he/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/he/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/he/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/he/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/he/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="ראשי">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">זוכר מה שהעתקת. החזק את Ctrl+V כדי לבחור העתק ישן יותר. מוצר של ForumCore.</p>
-      <p class="lead">היסטוריית לוח עבור Windows. הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור עותק ישן יותר. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows. קנו ב-Microsoft Store.</p>
+      <p class="meta">היסטוריית לוח במחשב. החזיקו Ctrl+V כדי לבחור עותק ישן. מוצר של ForumCore.</p>
+      <p class="lead">הקישו Ctrl+V כדי להדביק כרגיל, או החזיקו כדי לבחור מהלוח הנוכחי ומתשעת ההעתקים האחרונים. ההיסטוריה נשארת במחשב, מוצפנת לחשבון Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>הקש <kbd>Ctrl+V</kbd> כדי להדביק את ההעתק העדכני ביותר, כרגיל. החזק את <kbd>Ctrl+V</kbd> כדי לבחור מתוך לוח הגזירים הנוכחי (V) ותשעת ההעתקים האחרונים. הפריט החדש ביותר מופיע ראשון.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> ו־<kbd>D</kbd>, העבר את הסמן או לחץ כדי לבחור שורה. <kbd>K</kbd> מסיר שורה. החזק את <kbd>L</kbd> כדי לנקות. שחרר את Ctrl כדי להדביק בחלון שבו היית.</li>
     </ol>
-    <p class="note">ההיסטוריה נשארת במחשב שלך, מוצפנת עבור חשבון Windows שלך. העתקים ממנהלי סיסמאות אינם נשמרים. רכוש ב־Microsoft Store.</p>
+    <p class="note">ההיסטוריה נשארת במחשב שלך, מוצפנת עבור חשבון Windows שלך. העתקים ממנהלי סיסמאות אינם נשמרים. נסו 15 ימים ואחר כך רכשו ב־Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">פרטיות</a>

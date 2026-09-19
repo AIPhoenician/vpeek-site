@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — ține Ctrl+V pentru o copie mai veche</title>
-  <meta name="description" content="Apăsați Ctrl+V pentru a lipi ca de obicei. Țineți apăsat pentru a alege o copie mai veche. Clipboardul rămâne pe PC-ul dvs.">
+  <meta name="description" content="Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat pentru o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/ro/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/ro/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — ține Ctrl+V pentru o copie mai veche">
-  <meta property="og:description" content="Apăsați Ctrl+V pentru a lipi ca de obicei. Țineți apăsat pentru a alege o copie mai veche. Clipboardul rămâne pe PC-ul dvs.">
+  <meta property="og:description" content="Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat pentru o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — ține Ctrl+V pentru o copie mai veche">
-  <meta name="twitter:description" content="Apăsați Ctrl+V pentru a lipi ca de obicei. Țineți apăsat pentru a alege o copie mai veche. Clipboardul rămâne pe PC-ul dvs.">
+  <meta name="twitter:description" content="Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat pentru o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, ține Ctrl+V pe Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/ro/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "ro",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Apăsați Ctrl+V pentru a lipi ca de obicei. Țineți apăsat pentru a alege o copie mai veche. Clipboardul rămâne pe PC-ul dvs.",
-      "featureList": [
-        "Copierea și decuparea funcționează în continuare ca de obicei. Decuparea elimină originalul.",
-        "Apăsați Ctrl+V pentru a lipi copia cea mai recentă, ca de obicei. Țineți apăsat Ctrl+V pentru a alege dintre clipboardul actual (V) și ultimele nouă copii. Cel mai recent element apare primul.",
-        "1–9, S și D, treceți cursorul sau faceți clic pentru a alege un rând. K elimină un rând. Țineți apăsată L pentru a șterge. Eliberați Ctrl pentru a lipi în fereastra în care vă aflați."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/ro/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/ro/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/ro/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "ro",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/ro/betterctrlv/"
+        "description": "Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat pentru o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.",
+        "featureList": [
+          "Copierea și decuparea funcționează în continuare ca de obicei. Decuparea elimină originalul.",
+          "Apăsați Ctrl+V pentru a lipi copia cea mai recentă, ca de obicei. Țineți apăsat Ctrl+V pentru a alege dintre clipboardul actual (V) și ultimele nouă copii. Cel mai recent element apare primul.",
+          "1–9, S și D, treceți cursorul sau faceți clic pentru a alege un rând. K elimină un rând. Țineți apăsată L pentru a șterge. Eliberați Ctrl pentru a lipi în fereastra în care vă aflați."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/ro/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/ro/betterctrlv/",
+        "name": "BetterCtrlV — ține Ctrl+V pentru o copie mai veche",
+        "description": "Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat pentru o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.",
+        "inLanguage": "ro",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/ro/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/ro/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/ro/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/ro/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/ro/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/ro/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Principal">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Reține ce copiați. Țineți apăsat Ctrl+V pentru a alege o copie mai veche. Un produs ForumCore.</p>
-      <p class="lead">Istoric clipboard pentru Windows. Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat ca să alegi o copie mai veche. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows. Cumpără din Microsoft Store.</p>
+      <p class="meta">Istoric clipboard pe PC-ul tău. Ține Ctrl+V pentru o copie mai veche. Un produs ForumCore.</p>
+      <p class="lead">Atinge Ctrl+V ca să lipești ca de obicei, sau ține apăsat ca să alegi din clipboardul actual și ultimele nouă copii. Istoricul rămâne pe PC-ul tău, criptat pentru contul Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Apăsați <kbd>Ctrl+V</kbd> pentru a lipi copia cea mai recentă, ca de obicei. Țineți apăsat <kbd>Ctrl+V</kbd> pentru a alege dintre clipboardul actual (V) și ultimele nouă copii. Cel mai recent element apare primul.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> și <kbd>D</kbd>, treceți cursorul sau faceți clic pentru a alege un rând. <kbd>K</kbd> elimină un rând. Țineți apăsată <kbd>L</kbd> pentru a șterge. Eliberați Ctrl pentru a lipi în fereastra în care vă aflați.</li>
     </ol>
-    <p class="note">Istoricul rămâne pe PC-ul dvs., criptat pentru contul dvs. Windows. Copiile din managerii de parole nu sunt salvate. Cumpărați-l din Microsoft Store.</p>
+    <p class="note">Istoricul rămâne pe PC-ul dvs., criptat pentru contul dvs. Windows. Copiile din managerii de parole nu sunt salvate. Încearcă 15 zile, apoi cumpără din Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Confidențialitate</a>

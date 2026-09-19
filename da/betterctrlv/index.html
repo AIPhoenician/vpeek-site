@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — hold Ctrl+V for at vælge en ældre kopi</title>
-  <meta name="description" content="Tryk på Ctrl+V for at indsætte som du plejer. Hold nede for at vælge en ældre kopi. Udklipsholderen bliver på din pc.">
+  <meta name="description" content="Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/da/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/da/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — hold Ctrl+V for at vælge en ældre kopi">
-  <meta property="og:description" content="Tryk på Ctrl+V for at indsætte som du plejer. Hold nede for at vælge en ældre kopi. Udklipsholderen bliver på din pc.">
+  <meta property="og:description" content="Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — hold Ctrl+V for at vælge en ældre kopi">
-  <meta name="twitter:description" content="Tryk på Ctrl+V for at indsætte som du plejer. Hold nede for at vælge en ældre kopi. Udklipsholderen bliver på din pc.">
+  <meta name="twitter:description" content="Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, hold Ctrl+V i Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/da/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "da",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Tryk på Ctrl+V for at indsætte som du plejer. Hold nede for at vælge en ældre kopi. Udklipsholderen bliver på din pc.",
-      "featureList": [
-        "Kopiér og klip fungerer som de plejer. Når du klipper, fjernes originalen.",
-        "Tryk på Ctrl+V for at indsætte den seneste kopi, som normalt. Hold Ctrl+V nede for at vælge blandt det aktuelle udklip (V) og dine sidste ni kopier. Det seneste vises først.",
-        "1–9, S og D, peg eller klik for at vælge en række. K fjerner en række. Hold L nede for at rydde. Slip Ctrl for at indsætte i det vindue, du var i."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/da/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/da/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/da/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "da",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/da/betterctrlv/"
+        "description": "Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto.",
+        "featureList": [
+          "Kopiér og klip fungerer som de plejer. Når du klipper, fjernes originalen.",
+          "Tryk på Ctrl+V for at indsætte den seneste kopi, som normalt. Hold Ctrl+V nede for at vælge blandt det aktuelle udklip (V) og dine sidste ni kopier. Det seneste vises først.",
+          "1–9, S og D, peg eller klik for at vælge en række. K fjerner en række. Hold L nede for at rydde. Slip Ctrl for at indsætte i det vindue, du var i."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/da/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/da/betterctrlv/",
+        "name": "BetterCtrlV — hold Ctrl+V for at vælge en ældre kopi",
+        "description": "Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto.",
+        "inLanguage": "da",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/da/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/da/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/da/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/da/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/da/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/da/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Hovedmenu">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Den husker, hvad du kopierer. Hold Ctrl+V nede for at vælge en ældre kopi. Et produkt fra ForumCore.</p>
-      <p class="lead">Udklipshistorik til Windows. Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge en ældre kopi. Historikken bliver på din pc, krypteret til din Windows-konto. Køb den i Microsoft Store.</p>
+      <p class="meta">Udklipshistorik på din pc. Hold Ctrl+V for at vælge en ældre kopi. Et produkt fra ForumCore.</p>
+      <p class="lead">Tryk på Ctrl+V for at indsætte som vanligt, eller hold for at vælge blandt det aktuelle udklip og dine sidste ni kopier. Historikken bliver på din pc, krypteret til din Windows-konto.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Tryk på <kbd>Ctrl+V</kbd> for at indsætte den seneste kopi, som normalt. Hold <kbd>Ctrl+V</kbd> nede for at vælge blandt det aktuelle udklip (V) og dine sidste ni kopier. Det seneste vises først.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> og <kbd>D</kbd>, peg eller klik for at vælge en række. <kbd>K</kbd> fjerner en række. Hold <kbd>L</kbd> nede for at rydde. Slip Ctrl for at indsætte i det vindue, du var i.</li>
     </ol>
-    <p class="note">Historikken bliver på din pc, krypteret til din Windows-konto. Kopier fra adgangskodeadministratorer gemmes ikke. Køb den i Microsoft Store.</p>
+    <p class="note">Historikken bliver på din pc, krypteret til din Windows-konto. Kopier fra adgangskodeadministratorer gemmes ikke. Prøv i 15 dage, og køb den derefter i Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Privatliv</a>

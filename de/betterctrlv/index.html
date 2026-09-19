@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — Strg+V halten, ältere Kopie wählen</title>
-  <meta name="description" content="Tippen Sie Strg+V, um wie gewohnt einzufügen. Halten, um eine ältere Kopie zu wählen. Die Zwischenablage bleibt auf Ihrem PC.">
+  <meta name="description" content="Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/de/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/de/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — Strg+V halten, ältere Kopie wählen">
-  <meta property="og:description" content="Tippen Sie Strg+V, um wie gewohnt einzufügen. Halten, um eine ältere Kopie zu wählen. Die Zwischenablage bleibt auf Ihrem PC.">
+  <meta property="og:description" content="Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — Strg+V halten, ältere Kopie wählen">
-  <meta name="twitter:description" content="Tippen Sie Strg+V, um wie gewohnt einzufügen. Halten, um eine ältere Kopie zu wählen. Die Zwischenablage bleibt auf Ihrem PC.">
+  <meta name="twitter:description" content="Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, Strg+V unter Windows halten">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/de/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "de",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Tippen Sie Strg+V, um wie gewohnt einzufügen. Halten, um eine ältere Kopie zu wählen. Die Zwischenablage bleibt auf Ihrem PC.",
-      "featureList": [
-        "Kopieren und Ausschneiden funktionieren weiterhin wie gewohnt. Beim Ausschneiden wird das Original entfernt.",
-        "Tippen Sie Strg+V, um die neueste Kopie einzufügen, wie gewohnt. Halten Sie Strg+V gedrückt, um aus der aktuellen Zwischenablage (V) und Ihren letzten neun Kopien zu wählen. Der neueste Eintrag steht oben.",
-        "1–9, S und D, zeigen oder klicken, um eine Zeile zu wählen. K entfernt eine Zeile. Halten Sie L zum Leeren. Lassen Sie Strg los, um in das Fenster einzufügen, in dem Sie gerade waren."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/de/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/de/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/de/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "de",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/de/betterctrlv/"
+        "description": "Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.",
+        "featureList": [
+          "Kopieren und Ausschneiden funktionieren weiterhin wie gewohnt. Beim Ausschneiden wird das Original entfernt.",
+          "Tippen Sie Strg+V, um die neueste Kopie einzufügen, wie gewohnt. Halten Sie Strg+V gedrückt, um aus der aktuellen Zwischenablage (V) und Ihren letzten neun Kopien zu wählen. Der neueste Eintrag steht oben.",
+          "1–9, S und D, zeigen oder klicken, um eine Zeile zu wählen. K entfernt eine Zeile. Halten Sie L zum Leeren. Lassen Sie Strg los, um in das Fenster einzufügen, in dem Sie gerade waren."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/de/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/de/betterctrlv/",
+        "name": "BetterCtrlV — Strg+V halten, ältere Kopie wählen",
+        "description": "Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.",
+        "inLanguage": "de",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/de/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/de/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/de/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/de/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/de/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/de/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Hauptnavigation">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Es merkt sich, was Sie kopieren. Halten Sie Strg+V, um eine ältere Kopie zu wählen. Ein Produkt von ForumCore.</p>
-      <p class="lead">Zwischenablageverlauf für Windows. Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um eine ältere Kopie zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto. Kaufen Sie die App im Microsoft Store.</p>
+      <p class="meta">Zwischenablageverlauf auf Ihrem PC. Halten Sie Strg+V, um eine ältere Kopie zu wählen. Ein Produkt von ForumCore.</p>
+      <p class="lead">Tippen Sie Strg+V, um wie gewohnt einzufügen, oder halten Sie, um aus der aktuellen Zwischenablage und Ihren letzten neun Kopien zu wählen. Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Tippen Sie <kbd>Strg+V</kbd>, um die neueste Kopie einzufügen, wie gewohnt. Halten Sie <kbd>Strg+V</kbd> gedrückt, um aus der aktuellen Zwischenablage (V) und Ihren letzten neun Kopien zu wählen. Der neueste Eintrag steht oben.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> und <kbd>D</kbd>, zeigen oder klicken, um eine Zeile zu wählen. <kbd>K</kbd> entfernt eine Zeile. Halten Sie <kbd>L</kbd> zum Leeren. Lassen Sie Strg los, um in das Fenster einzufügen, in dem Sie gerade waren.</li>
     </ol>
-    <p class="note">Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto. Kopien aus Passwort-Managern werden nicht gespeichert. Kaufen Sie die App im Microsoft Store.</p>
+    <p class="note">Der Verlauf bleibt auf Ihrem PC, verschlüsselt für Ihr Windows-Konto. Kopien aus Passwort-Managern werden nicht gespeichert. 15 Tage testen, danach im Microsoft Store kaufen.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Datenschutz</a>

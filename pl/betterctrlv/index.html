@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — przytrzymaj Ctrl+V, by wybrać starszą kopię</title>
-  <meta name="description" content="Naciśnij Ctrl+V, aby wkleić jak zwykle. Przytrzymaj, aby wybrać starszą kopię. Schowek zostaje na Twoim komputerze.">
+  <meta name="description" content="Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/pl/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/pl/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — przytrzymaj Ctrl+V, by wybrać starszą kopię">
-  <meta property="og:description" content="Naciśnij Ctrl+V, aby wkleić jak zwykle. Przytrzymaj, aby wybrać starszą kopię. Schowek zostaje na Twoim komputerze.">
+  <meta property="og:description" content="Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — przytrzymaj Ctrl+V, by wybrać starszą kopię">
-  <meta name="twitter:description" content="Naciśnij Ctrl+V, aby wkleić jak zwykle. Przytrzymaj, aby wybrać starszą kopię. Schowek zostaje na Twoim komputerze.">
+  <meta name="twitter:description" content="Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, przytrzymaj Ctrl+V w Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/pl/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "pl",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Naciśnij Ctrl+V, aby wkleić jak zwykle. Przytrzymaj, aby wybrać starszą kopię. Schowek zostaje na Twoim komputerze.",
-      "featureList": [
-        "Kopiowanie i wycinanie działają jak dotychczas. Wycinanie usuwa oryginał.",
-        "Naciśnij Ctrl+V, aby wkleić najnowszą kopię, jak zwykle. Przytrzymaj Ctrl+V, aby wybrać spośród bieżącego schowka (V) i dziewięciu ostatnich kopii. Najnowszy element jest na górze.",
-        "1–9, S i D, wskaż lub kliknij, aby wybrać wiersz. K usuwa wiersz. Przytrzymaj L, aby wyczyścić. Zwolnij Ctrl, aby wkleić w oknie, w którym byłeś."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/pl/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/pl/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/pl/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "pl",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/pl/betterctrlv/"
+        "description": "Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.",
+        "featureList": [
+          "Kopiowanie i wycinanie działają jak dotychczas. Wycinanie usuwa oryginał.",
+          "Naciśnij Ctrl+V, aby wkleić najnowszą kopię, jak zwykle. Przytrzymaj Ctrl+V, aby wybrać spośród bieżącego schowka (V) i dziewięciu ostatnich kopii. Najnowszy element jest na górze.",
+          "1–9, S i D, wskaż lub kliknij, aby wybrać wiersz. K usuwa wiersz. Przytrzymaj L, aby wyczyścić. Zwolnij Ctrl, aby wkleić w oknie, w którym byłeś."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/pl/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/pl/betterctrlv/",
+        "name": "BetterCtrlV — przytrzymaj Ctrl+V, by wybrać starszą kopię",
+        "description": "Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.",
+        "inLanguage": "pl",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/pl/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/pl/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/pl/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/pl/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/pl/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/pl/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Główne">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Zapamiętuje to, co kopiujesz. Przytrzymaj Ctrl+V, aby wybrać starszą kopię. Produkt ForumCore.</p>
-      <p class="lead">Historia schowka dla Windows. Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać starszą kopię. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows. Kup w Microsoft Store.</p>
+      <p class="meta">Historia schowka na Twoim PC. Przytrzymaj Ctrl+V, by wybrać starszą kopię. Produkt ForumCore.</p>
+      <p class="lead">Naciśnij Ctrl+V, aby wkleić jak zwykle, albo przytrzymaj, by wybrać spośród bieżącego schowka i dziewięciu ostatnich kopii. Historia zostaje na Twoim PC, zaszyfrowana dla konta Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Naciśnij <kbd>Ctrl+V</kbd>, aby wkleić najnowszą kopię, jak zwykle. Przytrzymaj <kbd>Ctrl+V</kbd>, aby wybrać spośród bieżącego schowka (V) i dziewięciu ostatnich kopii. Najnowszy element jest na górze.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> i <kbd>D</kbd>, wskaż lub kliknij, aby wybrać wiersz. <kbd>K</kbd> usuwa wiersz. Przytrzymaj <kbd>L</kbd>, aby wyczyścić. Zwolnij Ctrl, aby wkleić w oknie, w którym byłeś.</li>
     </ol>
-    <p class="note">Historia zostaje na Twoim komputerze, zaszyfrowana dla Twojego konta Windows. Kopie z menedżerów haseł nie są zapisywane. Kup w Microsoft Store.</p>
+    <p class="note">Historia zostaje na Twoim komputerze, zaszyfrowana dla Twojego konta Windows. Kopie z menedżerów haseł nie są zapisywane. Wypróbuj 15 dni, potem kup w Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Prywatność</a>

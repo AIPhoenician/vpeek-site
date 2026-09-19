@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — podržte Ctrl+V a vyberte starší kopii</title>
-  <meta name="description" content="Klepněte na Ctrl+V a vložte jako obvykle. Podržením vyberete starší kopii. Schránka zůstává na vašem počítači.">
+  <meta name="description" content="Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/cs/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/cs/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — podržte Ctrl+V a vyberte starší kopii">
-  <meta property="og:description" content="Klepněte na Ctrl+V a vložte jako obvykle. Podržením vyberete starší kopii. Schránka zůstává na vašem počítači.">
+  <meta property="og:description" content="Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — podržte Ctrl+V a vyberte starší kopii">
-  <meta name="twitter:description" content="Klepněte na Ctrl+V a vložte jako obvykle. Podržením vyberete starší kopii. Schránka zůstává na vašem počítači.">
+  <meta name="twitter:description" content="Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, podržte Ctrl+V ve Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/cs/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "cs",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Klepněte na Ctrl+V a vložte jako obvykle. Podržením vyberete starší kopii. Schránka zůstává na vašem počítači.",
-      "featureList": [
-        "Kopírování a vyjímání fungují dál jako obvykle. Vyjmutím se původní obsah odstraní.",
-        "Klepněte na Ctrl+V a vložte nejnovější kopii, jako obvykle. Podržte Ctrl+V a vyberte z aktuální schránky (V) a posledních devíti kopií. Nejnovější položka je nahoře.",
-        "1–9, S a D, najeďte nebo klikněte a vyberte řádek. K odebere řádek. Podržením L vymažete. Uvolněním Ctrl vložíte do okna, ve kterém jste byli."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/cs/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/cs/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/cs/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "cs",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/cs/betterctrlv/"
+        "description": "Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.",
+        "featureList": [
+          "Kopírování a vyjímání fungují dál jako obvykle. Vyjmutím se původní obsah odstraní.",
+          "Klepněte na Ctrl+V a vložte nejnovější kopii, jako obvykle. Podržte Ctrl+V a vyberte z aktuální schránky (V) a posledních devíti kopií. Nejnovější položka je nahoře.",
+          "1–9, S a D, najeďte nebo klikněte a vyberte řádek. K odebere řádek. Podržením L vymažete. Uvolněním Ctrl vložíte do okna, ve kterém jste byli."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/cs/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/cs/betterctrlv/",
+        "name": "BetterCtrlV — podržte Ctrl+V a vyberte starší kopii",
+        "description": "Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.",
+        "inLanguage": "cs",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/cs/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/cs/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/cs/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/cs/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/cs/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/cs/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Hlavní">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Pamatuje si, co zkopírujete. Podržte Ctrl+V a vyberte starší kopii. Produkt ForumCore.</p>
-      <p class="lead">Historie schránky pro Windows. Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte starší kopii. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows. Kupte v Microsoft Storu.</p>
+      <p class="meta">Historie schránky ve vašem počítači. Podržte Ctrl+V a vyberte starší kopii. Produkt ForumCore.</p>
+      <p class="lead">Klepněte na Ctrl+V a vložte jako obvykle, nebo podržte a vyberte z aktuální schránky a posledních devíti kopií. Historie zůstane ve vašem počítači, šifrovaná pro váš účet Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Klepněte na <kbd>Ctrl+V</kbd> a vložte nejnovější kopii, jako obvykle. Podržte <kbd>Ctrl+V</kbd> a vyberte z aktuální schránky (V) a posledních devíti kopií. Nejnovější položka je nahoře.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> a <kbd>D</kbd>, najeďte nebo klikněte a vyberte řádek. <kbd>K</kbd> odebere řádek. Podržením <kbd>L</kbd> vymažete. Uvolněním Ctrl vložíte do okna, ve kterém jste byli.</li>
     </ol>
-    <p class="note">Historie zůstává na vašem počítači, šifrovaná pro váš účet Windows. Kopie ze správců hesel se neukládají. Koupíte ho v Microsoft Storu.</p>
+    <p class="note">Historie zůstává na vašem počítači, šifrovaná pro váš účet Windows. Kopie ze správců hesel se neukládají. Vyzkoušejte 15 dní, poté kupte v Microsoft Storu.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Soukromí</a>

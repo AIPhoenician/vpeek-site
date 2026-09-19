@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — giữ Ctrl+V để chọn bản sao cũ hơn</title>
-  <meta name="description" content="Nhấn Ctrl+V để dán như bình thường. Giữ để chọn bản sao cũ hơn. Bảng tạm ở lại trên máy của bạn.">
+  <meta name="description" content="Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/vi/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/vi/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — giữ Ctrl+V để chọn bản sao cũ hơn">
-  <meta property="og:description" content="Nhấn Ctrl+V để dán như bình thường. Giữ để chọn bản sao cũ hơn. Bảng tạm ở lại trên máy của bạn.">
+  <meta property="og:description" content="Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — giữ Ctrl+V để chọn bản sao cũ hơn">
-  <meta name="twitter:description" content="Nhấn Ctrl+V để dán như bình thường. Giữ để chọn bản sao cũ hơn. Bảng tạm ở lại trên máy của bạn.">
+  <meta name="twitter:description" content="Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, giữ Ctrl+V trên Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/vi/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "vi",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Nhấn Ctrl+V để dán như bình thường. Giữ để chọn bản sao cũ hơn. Bảng tạm ở lại trên máy của bạn.",
-      "featureList": [
-        "Sao chép và cắt vẫn hoạt động như bình thường. Thao tác cắt sẽ xóa nội dung gốc.",
-        "Nhấn Ctrl+V để dán bản sao mới nhất, như bình thường. Giữ Ctrl+V để chọn từ bảng tạm hiện tại (V) và chín bản sao gần nhất. Mục mới nhất nằm ở đầu danh sách.",
-        "1–9, S và D, di chuột hoặc nhấp để chọn một hàng. K xóa một hàng. Giữ L để xóa. Thả Ctrl để dán vào cửa sổ bạn đang dùng."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/vi/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/vi/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/vi/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "vi",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/vi/betterctrlv/"
+        "description": "Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.",
+        "featureList": [
+          "Sao chép và cắt vẫn hoạt động như bình thường. Thao tác cắt sẽ xóa nội dung gốc.",
+          "Nhấn Ctrl+V để dán bản sao mới nhất, như bình thường. Giữ Ctrl+V để chọn từ bảng tạm hiện tại (V) và chín bản sao gần nhất. Mục mới nhất nằm ở đầu danh sách.",
+          "1–9, S và D, di chuột hoặc nhấp để chọn một hàng. K xóa một hàng. Giữ L để xóa. Thả Ctrl để dán vào cửa sổ bạn đang dùng."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/vi/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/vi/betterctrlv/",
+        "name": "BetterCtrlV — giữ Ctrl+V để chọn bản sao cũ hơn",
+        "description": "Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.",
+        "inLanguage": "vi",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/vi/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/vi/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/vi/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/vi/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/vi/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/vi/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Chính">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Ghi nhớ những gì bạn sao chép. Giữ Ctrl+V để chọn bản sao cũ hơn. Sản phẩm của ForumCore.</p>
-      <p class="lead">Lịch sử khay nhớ tạm cho Windows. Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn bản sao cũ hơn. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows. Mua trên Microsoft Store.</p>
+      <p class="meta">Lịch sử khay nhớ tạm trên máy tính. Giữ Ctrl+V để chọn bản sao cũ hơn. Sản phẩm của ForumCore.</p>
+      <p class="lead">Chạm Ctrl+V để dán như bình thường, hoặc giữ để chọn từ khay hiện tại và chín bản sao gần nhất. Lịch sử ở lại trên máy tính, được mã hóa cho tài khoản Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Nhấn <kbd>Ctrl+V</kbd> để dán bản sao mới nhất, như bình thường. Giữ <kbd>Ctrl+V</kbd> để chọn từ bảng tạm hiện tại (V) và chín bản sao gần nhất. Mục mới nhất nằm ở đầu danh sách.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> và <kbd>D</kbd>, di chuột hoặc nhấp để chọn một hàng. <kbd>K</kbd> xóa một hàng. Giữ <kbd>L</kbd> để xóa. Thả Ctrl để dán vào cửa sổ bạn đang dùng.</li>
     </ol>
-    <p class="note">Lịch sử ở lại trên máy của bạn, được mã hóa cho tài khoản Windows của bạn. Bản sao từ trình quản lý mật khẩu không được lưu. Mua trên Microsoft Store.</p>
+    <p class="note">Lịch sử ở lại trên máy của bạn, được mã hóa cho tài khoản Windows của bạn. Bản sao từ trình quản lý mật khẩu không được lưu. Dùng thử 15 ngày, rồi mua trên Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Quyền riêng tư</a>

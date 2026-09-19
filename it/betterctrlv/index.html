@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — tieni premuto Ctrl+V per una copia precedente</title>
-  <meta name="description" content="Premi Ctrl+V per incollare come sempre. Tieni premuto per scegliere una copia precedente. Gli Appunti restano sul tuo PC.">
+  <meta name="description" content="Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/it/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/it/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — tieni premuto Ctrl+V per una copia precedente">
-  <meta property="og:description" content="Premi Ctrl+V per incollare come sempre. Tieni premuto per scegliere una copia precedente. Gli Appunti restano sul tuo PC.">
+  <meta property="og:description" content="Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — tieni premuto Ctrl+V per una copia precedente">
-  <meta name="twitter:description" content="Premi Ctrl+V per incollare come sempre. Tieni premuto per scegliere una copia precedente. Gli Appunti restano sul tuo PC.">
+  <meta name="twitter:description" content="Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, tieni premuto Ctrl+V su Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/it/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "it",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Premi Ctrl+V per incollare come sempre. Tieni premuto per scegliere una copia precedente. Gli Appunti restano sul tuo PC.",
-      "featureList": [
-        "Copia e taglia funzionano ancora come sempre. Tagliare rimuove l’originale.",
-        "Premi Ctrl+V per incollare la copia più recente, come di consueto. Tieni premuto Ctrl+V per scegliere tra gli Appunti attuali (V) e le tue ultime nove copie. Il più recente appare per primo.",
-        "1–9, S e D, passa il mouse o fai clic per scegliere una riga. K rimuove una riga. Tieni premuto L per cancellare. Rilascia Ctrl per incollare nella finestra in cui ti trovavi."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/it/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/it/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/it/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "it",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/it/betterctrlv/"
+        "description": "Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows.",
+        "featureList": [
+          "Copia e taglia funzionano ancora come sempre. Tagliare rimuove l’originale.",
+          "Premi Ctrl+V per incollare la copia più recente, come di consueto. Tieni premuto Ctrl+V per scegliere tra gli Appunti attuali (V) e le tue ultime nove copie. Il più recente appare per primo.",
+          "1–9, S e D, passa il mouse o fai clic per scegliere una riga. K rimuove una riga. Tieni premuto L per cancellare. Rilascia Ctrl per incollare nella finestra in cui ti trovavi."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/it/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/it/betterctrlv/",
+        "name": "BetterCtrlV — tieni premuto Ctrl+V per una copia precedente",
+        "description": "Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows.",
+        "inLanguage": "it",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/it/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/it/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/it/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/it/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/it/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/it/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Principale">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Ricorda ciò che copi. Tieni premuto Ctrl+V per scegliere una copia precedente. Un prodotto ForumCore.</p>
-      <p class="lead">Cronologia degli Appunti per Windows. Tocca Ctrl+V per incollare come sempre, o tieni premuto per scegliere una copia precedente. La cronologia resta sul PC, crittografata per il tuo account Windows. Acquistalo nel Microsoft Store.</p>
+      <p class="meta">Cronologia degli Appunti sul PC. Tieni premuto Ctrl+V per una copia precedente. Un prodotto ForumCore.</p>
+      <p class="lead">Tocca Ctrl+V per incollare come sempre, o tieni premuto per scegliere tra gli Appunti attuali e le tue ultime nove copie. La cronologia resta sul PC, crittografata per il tuo account Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Premi <kbd>Ctrl+V</kbd> per incollare la copia più recente, come di consueto. Tieni premuto <kbd>Ctrl+V</kbd> per scegliere tra gli Appunti attuali (V) e le tue ultime nove copie. Il più recente appare per primo.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> e <kbd>D</kbd>, passa il mouse o fai clic per scegliere una riga. <kbd>K</kbd> rimuove una riga. Tieni premuto <kbd>L</kbd> per cancellare. Rilascia Ctrl per incollare nella finestra in cui ti trovavi.</li>
     </ol>
-    <p class="note">La cronologia resta sul tuo PC, crittografata per il tuo account Windows. Le copie dei gestori di password non vengono salvate. Acquistalo su Microsoft Store.</p>
+    <p class="note">La cronologia resta sul PC, crittografata per il tuo account Windows. Le copie dei gestori di password non vengono salvate. Provalo 15 giorni, poi acquistalo nel Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Privacy</a>

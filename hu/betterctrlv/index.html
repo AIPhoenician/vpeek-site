@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — tartsa a Ctrl+V-t egy korábbi másolathoz</title>
-  <meta name="description" content="Koppintson a Ctrl+V-re a szokásos beillesztéshez. Tartsa lenyomva egy korábbi másolathoz. A vágólap a számítógépén marad.">
+  <meta name="description" content="Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolathoz. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/hu/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/hu/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — tartsa a Ctrl+V-t egy korábbi másolathoz">
-  <meta property="og:description" content="Koppintson a Ctrl+V-re a szokásos beillesztéshez. Tartsa lenyomva egy korábbi másolathoz. A vágólap a számítógépén marad.">
+  <meta property="og:description" content="Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolathoz. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — tartsa a Ctrl+V-t egy korábbi másolathoz">
-  <meta name="twitter:description" content="Koppintson a Ctrl+V-re a szokásos beillesztéshez. Tartsa lenyomva egy korábbi másolathoz. A vágólap a számítógépén marad.">
+  <meta name="twitter:description" content="Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolathoz. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, tartsa a Ctrl+V-t Windowson">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/hu/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "hu",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Koppintson a Ctrl+V-re a szokásos beillesztéshez. Tartsa lenyomva egy korábbi másolathoz. A vágólap a számítógépén marad.",
-      "featureList": [
-        "A másolás és a kivágás továbbra is a megszokott módon működik. A kivágás eltávolítja az eredetit.",
-        "Koppintson a Ctrl+V billentyűkombinációra a legújabb másolat beillesztéséhez, mint mindig. Tartsa lenyomva a Ctrl+V billentyűkombinációt, és válasszon a jelenlegi vágólap (V) és az utolsó kilenc másolat közül. A legújabb elem van legfelül.",
-        "1–9, S és D, mutasson vagy kattintson egy sor kiválasztásához. A K egy sort töröl. Az L lenyomva tartása töröl. A Ctrl felengedésével abba az ablakba illeszt, ahol volt."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/hu/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/hu/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/hu/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "hu",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/hu/betterctrlv/"
+        "description": "Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolathoz. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.",
+        "featureList": [
+          "A másolás és a kivágás továbbra is a megszokott módon működik. A kivágás eltávolítja az eredetit.",
+          "Koppintson a Ctrl+V billentyűkombinációra a legújabb másolat beillesztéséhez, mint mindig. Tartsa lenyomva a Ctrl+V billentyűkombinációt, és válasszon a jelenlegi vágólap (V) és az utolsó kilenc másolat közül. A legújabb elem van legfelül.",
+          "1–9, S és D, mutasson vagy kattintson egy sor kiválasztásához. A K egy sort töröl. Az L lenyomva tartása töröl. A Ctrl felengedésével abba az ablakba illeszt, ahol volt."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/hu/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/hu/betterctrlv/",
+        "name": "BetterCtrlV — tartsa a Ctrl+V-t egy korábbi másolathoz",
+        "description": "Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolathoz. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.",
+        "inLanguage": "hu",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/hu/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/hu/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/hu/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/hu/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/hu/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/hu/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Főmenü">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Megjegyzi, amit másol. Tartsa lenyomva a Ctrl+V-t egy korábbi másolat választásához. A ForumCore terméke.</p>
-      <p class="lead">Vágólap-előzmények Windowshoz. Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva egy korábbi másolat választásához. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva. Vásárolja meg a Microsoft Store-ban.</p>
+      <p class="meta">Vágólap-előzmények a PC-n. Tartsa a Ctrl+V-t egy korábbi másolathoz. A ForumCore terméke.</p>
+      <p class="lead">Koppintson a Ctrl+V-re a szokásos beillesztéshez, vagy tartsa lenyomva, és válasszon a jelenlegi vágólap és az utolsó kilenc másolat közül. Az előzmények a PC-n maradnak, a Windows-fiókjához titkosítva.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Koppintson a <kbd>Ctrl+V</kbd> billentyűkombinációra a legújabb másolat beillesztéséhez, mint mindig. Tartsa lenyomva a <kbd>Ctrl+V</kbd> billentyűkombinációt, és válasszon a jelenlegi vágólap (V) és az utolsó kilenc másolat közül. A legújabb elem van legfelül.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> és <kbd>D</kbd>, mutasson vagy kattintson egy sor kiválasztásához. A <kbd>K</kbd> egy sort töröl. Az <kbd>L</kbd> lenyomva tartása töröl. A Ctrl felengedésével abba az ablakba illeszt, ahol volt.</li>
     </ol>
-    <p class="note">Az előzmények a számítógépén maradnak, a Windows-fiókjához titkosítva. A jelszókezelők másolatai nem kerülnek mentésre. Vásárolja meg a Microsoft Store-ban.</p>
+    <p class="note">Az előzmények a számítógépén maradnak, a Windows-fiókjához titkosítva. A jelszókezelők másolatai nem kerülnek mentésre. 15 napig kipróbálható, utána a Microsoft Store-ban megvásárolható.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Adatvédelem</a>

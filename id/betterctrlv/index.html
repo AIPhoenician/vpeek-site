@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — tahan Ctrl+V untuk salinan yang lebih lama</title>
-  <meta name="description" content="Ketuk Ctrl+V untuk menempel seperti biasa. Tahan untuk memilih salinan lama. Papan klip tetap di PC Anda.">
+  <meta name="description" content="Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/id/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/id/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — tahan Ctrl+V untuk salinan yang lebih lama">
-  <meta property="og:description" content="Ketuk Ctrl+V untuk menempel seperti biasa. Tahan untuk memilih salinan lama. Papan klip tetap di PC Anda.">
+  <meta property="og:description" content="Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — tahan Ctrl+V untuk salinan yang lebih lama">
-  <meta name="twitter:description" content="Ketuk Ctrl+V untuk menempel seperti biasa. Tahan untuk memilih salinan lama. Papan klip tetap di PC Anda.">
+  <meta name="twitter:description" content="Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, tahan Ctrl+V di Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/id/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "id",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Ketuk Ctrl+V untuk menempel seperti biasa. Tahan untuk memilih salinan lama. Papan klip tetap di PC Anda.",
-      "featureList": [
-        "Menyalin dan memotong tetap berjalan seperti biasa. Memotong akan menghapus aslinya.",
-        "Ketuk Ctrl+V untuk menempelkan salinan terbaru, seperti biasa. Tahan Ctrl+V untuk memilih dari papan klip saat ini (V) dan sembilan salinan terakhir. Salinan terbaru di paling atas.",
-        "1–9, S dan D, arahkan atau klik untuk memilih baris. K menghapus satu baris. Tahan L untuk menghapus. Lepaskan Ctrl untuk menempelkan ke jendela tempat Anda berada."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/id/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/id/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/id/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "id",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/id/betterctrlv/"
+        "description": "Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.",
+        "featureList": [
+          "Menyalin dan memotong tetap berjalan seperti biasa. Memotong akan menghapus aslinya.",
+          "Ketuk Ctrl+V untuk menempelkan salinan terbaru, seperti biasa. Tahan Ctrl+V untuk memilih dari papan klip saat ini (V) dan sembilan salinan terakhir. Salinan terbaru di paling atas.",
+          "1–9, S dan D, arahkan atau klik untuk memilih baris. K menghapus satu baris. Tahan L untuk menghapus. Lepaskan Ctrl untuk menempelkan ke jendela tempat Anda berada."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/id/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/id/betterctrlv/",
+        "name": "BetterCtrlV — tahan Ctrl+V untuk salinan yang lebih lama",
+        "description": "Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.",
+        "inLanguage": "id",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/id/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/id/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/id/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/id/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/id/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/id/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Utama">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Mengingat apa yang Anda salin. Tahan Ctrl+V untuk memilih salinan lama. Produk ForumCore.</p>
-      <p class="lead">Riwayat papan klip untuk Windows. Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk memilih salinan yang lebih lama. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows. Beli di Microsoft Store.</p>
+      <p class="meta">Riwayat papan klip di PC Anda. Tahan Ctrl+V untuk salinan yang lebih lama. Produk ForumCore.</p>
+      <p class="lead">Ketuk Ctrl+V untuk menempel seperti biasa, atau tahan untuk memilih dari papan klip saat ini dan sembilan salinan terakhir. Riwayat tetap di PC Anda, dienkripsi untuk akun Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Ketuk <kbd>Ctrl+V</kbd> untuk menempelkan salinan terbaru, seperti biasa. Tahan <kbd>Ctrl+V</kbd> untuk memilih dari papan klip saat ini (V) dan sembilan salinan terakhir. Salinan terbaru di paling atas.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> dan <kbd>D</kbd>, arahkan atau klik untuk memilih baris. <kbd>K</kbd> menghapus satu baris. Tahan <kbd>L</kbd> untuk menghapus. Lepaskan Ctrl untuk menempelkan ke jendela tempat Anda berada.</li>
     </ol>
-    <p class="note">Riwayat tetap di PC Anda, dienkripsi untuk akun Windows Anda. Salinan dari pengelola kata sandi tidak disimpan. Beli di Microsoft Store.</p>
+    <p class="note">Riwayat tetap di PC Anda, dienkripsi untuk akun Windows Anda. Salinan dari pengelola kata sandi tidak disimpan. Coba 15 hari, lalu beli di Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Privasi</a>

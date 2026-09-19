@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — pidä Ctrl+V pohjassa vanhempaa kopiota varten</title>
-  <meta name="description" content="Napauta Ctrl+V liittääksesi kuten tavallisesti. Pidä pohjassa valitaksesi vanhemman kopion. Leikepöytä pysyy tietokoneellasi.">
+  <meta name="description" content="Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa vanhempaa kopiota varten. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/fi/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/fi/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — pidä Ctrl+V pohjassa vanhempaa kopiota varten">
-  <meta property="og:description" content="Napauta Ctrl+V liittääksesi kuten tavallisesti. Pidä pohjassa valitaksesi vanhemman kopion. Leikepöytä pysyy tietokoneellasi.">
+  <meta property="og:description" content="Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa vanhempaa kopiota varten. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — pidä Ctrl+V pohjassa vanhempaa kopiota varten">
-  <meta name="twitter:description" content="Napauta Ctrl+V liittääksesi kuten tavallisesti. Pidä pohjassa valitaksesi vanhemman kopion. Leikepöytä pysyy tietokoneellasi.">
+  <meta name="twitter:description" content="Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa vanhempaa kopiota varten. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, pidä Ctrl+V pohjassa Windowsissa">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/fi/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "fi",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "Napauta Ctrl+V liittääksesi kuten tavallisesti. Pidä pohjassa valitaksesi vanhemman kopion. Leikepöytä pysyy tietokoneellasi.",
-      "featureList": [
-        "Kopiointi ja leikkaus toimivat edelleen tavalliseen tapaan. Kun leikkaat, alkuperäinen poistetaan.",
-        "Napauta Ctrl+V liittääksesi uusimman kopion, kuten tavallisesti. Pidä Ctrl+V painettuna valitaksesi nykyisen leikepöydän (V) ja yhdeksän edellisen kopion joukosta. Uusin näkyy ensimmäisenä.",
-        "1–9, S ja D, osoita tai napsauta valitaksesi rivin. K poistaa rivin. Pidä L painettuna tyhjentääksesi. Liitä vapauttamalla Ctrl siihen ikkunaan, jossa olit."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/fi/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/fi/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/fi/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "fi",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/fi/betterctrlv/"
+        "description": "Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa vanhempaa kopiota varten. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.",
+        "featureList": [
+          "Kopiointi ja leikkaus toimivat edelleen tavalliseen tapaan. Kun leikkaat, alkuperäinen poistetaan.",
+          "Napauta Ctrl+V liittääksesi uusimman kopion, kuten tavallisesti. Pidä Ctrl+V painettuna valitaksesi nykyisen leikepöydän (V) ja yhdeksän edellisen kopion joukosta. Uusin näkyy ensimmäisenä.",
+          "1–9, S ja D, osoita tai napsauta valitaksesi rivin. K poistaa rivin. Pidä L painettuna tyhjentääksesi. Liitä vapauttamalla Ctrl siihen ikkunaan, jossa olit."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/fi/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/fi/betterctrlv/",
+        "name": "BetterCtrlV — pidä Ctrl+V pohjassa vanhempaa kopiota varten",
+        "description": "Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa vanhempaa kopiota varten. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.",
+        "inLanguage": "fi",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/fi/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/fi/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/fi/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/fi/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/fi/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/fi/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="Päävalikko">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">Se muistaa, mitä kopioit. Pidä Ctrl+V pohjassa valitaksesi vanhemman kopion. ForumCoren tuote.</p>
-      <p class="lead">Leikepöytähistoria Windowsille. Napauta Ctrl+V liittääksesi tavalliseen tapaan tai pidä pohjassa valitaksesi vanhemman kopion. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi. Osta Microsoft Storesta.</p>
+      <p class="meta">Leikepöytähistoria tietokoneellasi. Pidä Ctrl+V pohjassa vanhempaa kopiota varten. ForumCoren tuote.</p>
+      <p class="lead">Napauta Ctrl+V liittääksesi tavalliseen tapaan, tai pidä pohjassa valitaksesi nykyisen leikepöydän ja yhdeksän edellisen kopion joukosta. Historia pysyy tietokoneellasi, salattuna Windows-tilillesi.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>Napauta <kbd>Ctrl+V</kbd> liittääksesi uusimman kopion, kuten tavallisesti. Pidä <kbd>Ctrl+V</kbd> painettuna valitaksesi nykyisen leikepöydän (V) ja yhdeksän edellisen kopion joukosta. Uusin näkyy ensimmäisenä.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd> ja <kbd>D</kbd>, osoita tai napsauta valitaksesi rivin. <kbd>K</kbd> poistaa rivin. Pidä <kbd>L</kbd> painettuna tyhjentääksesi. Liitä vapauttamalla Ctrl siihen ikkunaan, jossa olit.</li>
     </ol>
-    <p class="note">Historia pysyy tietokoneellasi, salattuna Windows-tilillesi. Salasananhallintaohjelmien kopioita ei tallenneta. Osta se Microsoft Storesta.</p>
+    <p class="note">Historia pysyy tietokoneellasi, salattuna Windows-tilillesi. Salasananhallintaohjelmien kopioita ei tallenneta. Kokeile 15 päivää, osta sitten Microsoft Storesta.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">Tietosuoja</a>

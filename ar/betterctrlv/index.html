@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — اضغط باستمرار Ctrl+V لنسخة أقدم</title>
-  <meta name="description" content="اضغط Ctrl+V للصق كالمعتاد. اضغط باستمرار لاختيار نسخة أقدم. تبقى الحافظة على جهازك.">
+  <meta name="description" content="سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لنسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/ar/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/ar/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — اضغط باستمرار Ctrl+V لنسخة أقدم">
-  <meta property="og:description" content="اضغط Ctrl+V للصق كالمعتاد. اضغط باستمرار لاختيار نسخة أقدم. تبقى الحافظة على جهازك.">
+  <meta property="og:description" content="سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لنسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — اضغط باستمرار Ctrl+V لنسخة أقدم">
-  <meta name="twitter:description" content="اضغط Ctrl+V للصق كالمعتاد. اضغط باستمرار لاختيار نسخة أقدم. تبقى الحافظة على جهازك.">
+  <meta name="twitter:description" content="سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لنسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV، اضغط باستمرار Ctrl+V على Windows">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/ar/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "ar",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "اضغط Ctrl+V للصق كالمعتاد. اضغط باستمرار لاختيار نسخة أقدم. تبقى الحافظة على جهازك.",
-      "featureList": [
-        "النسخ والقص يعملان كالمعتاد. عند القص، يُزال الأصل.",
-        "اضغط Ctrl+V للصق أحدث نسخة، كالمعتاد. اضغط باستمرار على Ctrl+V للاختيار من الحافظة الحالية (V) وآخر تسع نسخ. يظهر أحدث عنصر أولًا.",
-        "1–9 وS وD، مرّر المؤشر أو انقر لاختيار صف. K يزيل سطرًا. اضغط L باستمرار للمسح. حرّر مفتاح Ctrl للصق في النافذة التي كنت فيها."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/ar/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/ar/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/ar/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "ar",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/ar/betterctrlv/"
+        "description": "سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لنسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows.",
+        "featureList": [
+          "النسخ والقص يعملان كالمعتاد. عند القص، يُزال الأصل.",
+          "اضغط Ctrl+V للصق أحدث نسخة، كالمعتاد. اضغط باستمرار على Ctrl+V للاختيار من الحافظة الحالية (V) وآخر تسع نسخ. يظهر أحدث عنصر أولًا.",
+          "1–9 وS وD، مرّر المؤشر أو انقر لاختيار صف. K يزيل سطرًا. اضغط L باستمرار للمسح. حرّر مفتاح Ctrl للصق في النافذة التي كنت فيها."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/ar/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/ar/betterctrlv/",
+        "name": "BetterCtrlV — اضغط باستمرار Ctrl+V لنسخة أقدم",
+        "description": "سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لنسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows.",
+        "inLanguage": "ar",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/ar/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/ar/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/ar/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/ar/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/ar/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/ar/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="رئيسي">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">يتذكر ما تنسخه. اضغط Ctrl+V باستمرار لاختيار نسخة أقدم. منتج من ForumCore.</p>
-      <p class="lead">سجل الحافظة لـ Windows. اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار لاختيار نسخة أقدم. يبقى السجل على جهازك، مشفرًا لحساب Windows. اشترِه من Microsoft Store.</p>
+      <p class="meta">سجل الحافظة على جهازك. اضغط باستمرار Ctrl+V لنسخة أقدم. منتج من ForumCore.</p>
+      <p class="lead">اضغط Ctrl+V للصق كالمعتاد، أو اضغط باستمرار للاختيار من الحافظة الحالية وآخر تسع نسخ. يبقى السجل على جهازك، مشفرًا لحساب Windows.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>اضغط <kbd>Ctrl+V</kbd> للصق أحدث نسخة، كالمعتاد. اضغط باستمرار على <kbd>Ctrl+V</kbd> للاختيار من الحافظة الحالية (V) وآخر تسع نسخ. يظهر أحدث عنصر أولًا.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd> و<kbd>S</kbd> و<kbd>D</kbd>، مرّر المؤشر أو انقر لاختيار صف. <kbd>K</kbd> يزيل سطرًا. اضغط <kbd>L</kbd> باستمرار للمسح. حرّر مفتاح Ctrl للصق في النافذة التي كنت فيها.</li>
     </ol>
-    <p class="note">يبقى السجل على جهازك، مشفّرًا لحساب Windows لديك. لا تُحفظ النسخ من مديري كلمات المرور. اشترِه من Microsoft Store.</p>
+    <p class="note">يبقى السجل على جهازك، مشفّرًا لحساب Windows لديك. لا تُحفظ النسخ من مديري كلمات المرور. جرّبه 15 يومًا ثم اشترِه من Microsoft Store.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">الخصوصية</a>

@@ -47,7 +47,7 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="BetterCtrlV, pidä Ctrl+V pohjassa Windowsissa">
+  <meta property="og:image:alt" content="ForumCore">
   <meta property="og:locale" content="fi_FI">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="de_DE">
@@ -82,7 +82,7 @@
   <meta name="twitter:title" content="ForumCore — pieniä työkaluja, jotka pysyvät tietokoneellasi">
   <meta name="twitter:description" content="Pieniä työkaluja, jotka pysyvät tietokoneellasi.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
-  <meta name="twitter:image:alt" content="BetterCtrlV, pidä Ctrl+V pohjassa Windowsissa">
+  <meta name="twitter:image:alt" content="ForumCore">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -90,36 +90,49 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/",
-      "logo": "https://forumcore.ai/img/apple-touch-icon.png"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://forumcore.ai/#website",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/",
-      "inLanguage": "fi",
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "significantLink": "https://forumcore.ai/betterctrlv/",
-      "hasPart": {
+      {
+        "@type": "WebSite",
+        "@id": "https://forumcore.ai/#website",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "inLanguage": "fi",
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
+        },
+        "significantLink": "https://forumcore.ai/betterctrlv/",
+        "hasPart": {
+          "@id": "https://forumcore.ai/fi/betterctrlv/#webpage"
+        }
+      },
+      {
         "@type": "WebPage",
-        "name": "BetterCtrlV",
-        "url": "https://forumcore.ai/fi/betterctrlv/"
+        "@id": "https://forumcore.ai/fi/#webpage",
+        "url": "https://forumcore.ai/fi/",
+        "name": "ForumCore — pieniä työkaluja, jotka pysyvät tietokoneellasi",
+        "description": "ForumCore tekee pieniä työkaluja, jotka pysyvät tietokoneellasi. BetterCtrlV on ForumCoren tuote.",
+        "inLanguage": "fi",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/#organization"
+        }
       }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 </head>
 <body class="home">
   <nav aria-label="Päävalikko">

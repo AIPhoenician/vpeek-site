@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — 按住 Ctrl+V 选更早的副本</title>
-  <meta name="description" content="照常轻点 Ctrl+V 粘贴。按住即可选择较早的内容。剪贴板留在你的电脑上。">
+  <meta name="description" content="面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/zh-Hans/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/zh-Hans/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — 按住 Ctrl+V 选更早的副本">
-  <meta property="og:description" content="照常轻点 Ctrl+V 粘贴。按住即可选择较早的内容。剪贴板留在你的电脑上。">
+  <meta property="og:description" content="面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — 按住 Ctrl+V 选更早的副本">
-  <meta name="twitter:description" content="照常轻点 Ctrl+V 粘贴。按住即可选择较早的内容。剪贴板留在你的电脑上。">
+  <meta name="twitter:description" content="面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV，在 Windows 上按住 Ctrl+V">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/zh-Hans/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "zh-Hans",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "照常轻点 Ctrl+V 粘贴。按住即可选择较早的内容。剪贴板留在你的电脑上。",
-      "featureList": [
-        "复制和剪切仍按平常方式工作。剪切会从原位置移除内容。",
-        "轻点 Ctrl+V 即可像平时一样粘贴最新内容。按住 Ctrl+V，从当前剪贴板（V）和最近九次复制中选择。最新项目排在最前面。",
-        "1–9、S 和 D，悬停或单击以选择一行。K 删除一行。长按 L 清除。松开 Ctrl，粘贴到你刚才所在的窗口。"
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/zh-Hans/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/zh-Hans/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "zh-Hans",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/zh-Hans/betterctrlv/"
+        "description": "面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。",
+        "featureList": [
+          "复制和剪切仍按平常方式工作。剪切会从原位置移除内容。",
+          "轻点 Ctrl+V 即可像平时一样粘贴最新内容。按住 Ctrl+V，从当前剪贴板（V）和最近九次复制中选择。最新项目排在最前面。",
+          "1–9、S 和 D，悬停或单击以选择一行。K 删除一行。长按 L 清除。松开 Ctrl，粘贴到你刚才所在的窗口。"
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/zh-Hans/betterctrlv/",
+        "name": "BetterCtrlV — 按住 Ctrl+V 选更早的副本",
+        "description": "面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。",
+        "inLanguage": "zh-Hans",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/zh-Hans/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/zh-Hans/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/zh-Hans/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="主导航">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">会记住你复制过的内容。按住 Ctrl+V 即可选择较早复制的内容。ForumCore 出品。</p>
-      <p class="lead">面向 Windows 的剪贴板历史。点按 Ctrl+V 即可照常粘贴，按住则可选择更早的副本。历史留在你的电脑上，按 Windows 帐户加密。请到 Microsoft Store 购买。</p>
+      <p class="meta">留在电脑上的剪贴板历史。按住 Ctrl+V 选更早的副本。ForumCore 出品。</p>
+      <p class="lead">点按 Ctrl+V 即可照常粘贴，按住则可从当前剪贴板和最近九条副本中选择。历史留在你的电脑上，按 Windows 帐户加密。</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li>轻点 <kbd>Ctrl+V</kbd> 即可像平时一样粘贴最新内容。按住 <kbd>Ctrl+V</kbd>，从当前剪贴板（V）和最近九次复制中选择。最新项目排在最前面。</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>、<kbd>S</kbd> 和 <kbd>D</kbd>，悬停或单击以选择一行。<kbd>K</kbd> 删除一行。长按 <kbd>L</kbd> 清除。松开 Ctrl，粘贴到你刚才所在的窗口。</li>
     </ol>
-    <p class="note">历史记录留在你的电脑上，按你的 Windows 帐户加密。不会保存来自密码管理器的复制内容。请到 Microsoft Store 购买。</p>
+    <p class="note">历史记录留在你的电脑上，按你的 Windows 帐户加密。不会保存来自密码管理器的复制内容。可试用 15 天，然后到 Microsoft Store 购买。</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">隐私</a>

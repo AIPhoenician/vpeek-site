@@ -5,9 +5,9 @@ BetterCtrlV is a Windows clipboard app from ForumCore.
 Canonical product page: https://forumcore.ai/betterctrlv/
 Publisher: ForumCore, https://forumcore.ai/
 
-Tap Ctrl+V to paste as usual. Hold Ctrl+V to pick an older copy — the current clipboard and the last nine. History stays on your PC, encrypted for your Windows account. Copies from password managers are not saved.
+Tap Ctrl+V to paste as usual. Hold Ctrl+V to pick an older copy — the current clipboard and the last nine. History stays on your PC, encrypted for your Windows account. It does not use a cloud clipboard. Copies from password managers are not saved.
 
-Buy it in the Microsoft Store.
+Try it 15 days in the Microsoft Store, then buy there. Search the Store for BetterCtrlV.
 
 Privacy: https://forumcore.ai/betterctrlv/privacy.html
 Terms: https://forumcore.ai/betterctrlv/terms.html

@@ -47,7 +47,7 @@
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="BetterCtrlV, Strg+V unter Windows halten">
+  <meta property="og:image:alt" content="ForumCore">
   <meta property="og:locale" content="de_DE">
   <meta property="og:locale:alternate" content="en_US">
   <meta property="og:locale:alternate" content="fr_FR">
@@ -82,7 +82,7 @@
   <meta name="twitter:title" content="ForumCore — kleine Tools, die auf Ihrem PC bleiben">
   <meta name="twitter:description" content="Kleine Tools, die auf Ihrem PC bleiben.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
-  <meta name="twitter:image:alt" content="BetterCtrlV, Strg+V unter Windows halten">
+  <meta name="twitter:image:alt" content="ForumCore">
   <link rel="icon" href="/favicon.ico" sizes="any">
   <link rel="icon" href="/img/favicon-32.png" type="image/png" sizes="32x32">
   <link rel="apple-touch-icon" href="/img/apple-touch-icon.png">
@@ -90,36 +90,49 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/",
-      "logo": "https://forumcore.ai/img/apple-touch-icon.png"
-    },
-    {
-      "@type": "WebSite",
-      "@id": "https://forumcore.ai/#website",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/",
-      "inLanguage": "de",
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "significantLink": "https://forumcore.ai/betterctrlv/",
-      "hasPart": {
+      {
+        "@type": "WebSite",
+        "@id": "https://forumcore.ai/#website",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "inLanguage": "de",
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
+        },
+        "significantLink": "https://forumcore.ai/betterctrlv/",
+        "hasPart": {
+          "@id": "https://forumcore.ai/de/betterctrlv/#webpage"
+        }
+      },
+      {
         "@type": "WebPage",
-        "name": "BetterCtrlV",
-        "url": "https://forumcore.ai/de/betterctrlv/"
+        "@id": "https://forumcore.ai/de/#webpage",
+        "url": "https://forumcore.ai/de/",
+        "name": "ForumCore — kleine Tools, die auf Ihrem PC bleiben",
+        "description": "ForumCore macht kleine Tools, die auf Ihrem PC bleiben. BetterCtrlV ist ein Produkt von ForumCore.",
+        "inLanguage": "de",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/#organization"
+        }
       }
-    }
-  ]
-}
-</script>
+    ]
+  }
+  </script>
 </head>
 <body class="home">
   <nav aria-label="Hauptnavigation">

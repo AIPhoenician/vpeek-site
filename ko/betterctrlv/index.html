@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>BetterCtrlV — Ctrl+V를 길게 눌러 이전 복사본 선택</title>
-  <meta name="description" content="평소처럼 Ctrl+V를 짧게 눌러 붙여넣으세요. 길게 눌러 이전 복사본을 선택하세요. 클립보드는 내 PC에 머뭅니다.">
+  <meta name="description" content="Windows용 클립보드 기록. 평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.">
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
   <link rel="canonical" href="https://forumcore.ai/ko/betterctrlv/">
   <link rel="alternate" hreflang="en" href="https://forumcore.ai/betterctrlv/">
@@ -42,7 +42,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://forumcore.ai/ko/betterctrlv/">
   <meta property="og:title" content="BetterCtrlV — Ctrl+V를 길게 눌러 이전 복사본 선택">
-  <meta property="og:description" content="평소처럼 Ctrl+V를 짧게 눌러 붙여넣으세요. 길게 눌러 이전 복사본을 선택하세요. 클립보드는 내 PC에 머뭅니다.">
+  <meta property="og:description" content="Windows용 클립보드 기록. 평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.">
   <meta property="og:image" content="https://forumcore.ai/img/og-1200.png">
   <meta property="og:image:type" content="image/png">
   <meta property="og:image:width" content="1200">
@@ -80,7 +80,7 @@
   <meta property="og:locale:alternate" content="hi_IN">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="BetterCtrlV — Ctrl+V를 길게 눌러 이전 복사본 선택">
-  <meta name="twitter:description" content="평소처럼 Ctrl+V를 짧게 눌러 붙여넣으세요. 길게 눌러 이전 복사본을 선택하세요. 클립보드는 내 PC에 머뭅니다.">
+  <meta name="twitter:description" content="Windows용 클립보드 기록. 평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.">
   <meta name="twitter:image" content="https://forumcore.ai/img/og-1200.png">
   <meta name="twitter:image:alt" content="BetterCtrlV, Windows에서 Ctrl+V 길게 누르기">
   <link rel="icon" href="/favicon.ico" sizes="any">
@@ -90,55 +90,81 @@
   <meta name="theme-color" content="#08080a">
   <link rel="stylesheet" href="/css/site.css">
   <script src="/js/locale-boot.js"></script>
-<script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "Organization",
-      "@id": "https://forumcore.ai/#organization",
-      "name": "ForumCore",
-      "url": "https://forumcore.ai/"
-    },
-    {
-      "@type": "SoftwareApplication",
-      "name": "BetterCtrlV",
-      "url": "https://forumcore.ai/ko/betterctrlv/",
-      "image": "https://forumcore.ai/img/og-1200.png",
-      "operatingSystem": "Windows",
-      "applicationCategory": "UtilitiesApplication",
-      "inLanguage": "ko",
-      "isAccessibleForFree": true,
-      "publisher": {
-        "@id": "https://forumcore.ai/#organization"
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://forumcore.ai/#organization",
+        "name": "ForumCore",
+        "url": "https://forumcore.ai/",
+        "logo": "https://forumcore.ai/img/apple-touch-icon.png",
+        "email": "contact@forumcore.ai"
       },
-      "description": "평소처럼 Ctrl+V를 짧게 눌러 붙여넣으세요. 길게 눌러 이전 복사본을 선택하세요. 클립보드는 내 PC에 머뭅니다.",
-      "featureList": [
-        "복사와 잘라내기는 평소처럼 작동합니다. 잘라내면 원래 위치에서 항목이 제거됩니다.",
-        "Ctrl+V를 짧게 누르면 평소처럼 가장 최근 복사본이 붙여넣어집니다. Ctrl+V를 누른 채 현재 클립보드(V)와 최근 아홉 개 중에서 선택하세요. 최신 항목이 맨 위에 표시됩니다.",
-        "1–9, S와 D, 올리거나 클릭하여 행을 선택하세요. K로 한 줄을 삭제합니다. L을 길게 누르면 지워집니다. Ctrl에서 손을 떼면 있던 창에 붙여넣습니다."
-      ]
-    },
-    {
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "ForumCore",
-          "item": "https://forumcore.ai/ko/"
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://forumcore.ai/ko/betterctrlv/#app",
+        "name": "BetterCtrlV",
+        "url": "https://forumcore.ai/ko/betterctrlv/",
+        "image": "https://forumcore.ai/img/og-1200.png",
+        "operatingSystem": "Windows",
+        "softwareRequirements": "Windows",
+        "applicationCategory": "UtilitiesApplication",
+        "applicationSuite": "ForumCore",
+        "inLanguage": "ko",
+        "isAccessibleForFree": true,
+        "publisher": {
+          "@id": "https://forumcore.ai/#organization"
         },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "BetterCtrlV",
-          "item": "https://forumcore.ai/ko/betterctrlv/"
+        "description": "Windows용 클립보드 기록. 평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.",
+        "featureList": [
+          "복사와 잘라내기는 평소처럼 작동합니다. 잘라내면 원래 위치에서 항목이 제거됩니다.",
+          "Ctrl+V를 짧게 누르면 평소처럼 가장 최근 복사본이 붙여넣어집니다. Ctrl+V를 누른 채 현재 클립보드(V)와 최근 아홉 개 중에서 선택하세요. 최신 항목이 맨 위에 표시됩니다.",
+          "1–9, S와 D, 올리거나 클릭하여 행을 선택하세요. K로 한 줄을 삭제합니다. L을 길게 누르면 지워집니다. Ctrl에서 손을 떼면 있던 창에 붙여넣습니다."
+        ]
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://forumcore.ai/ko/betterctrlv/#webpage",
+        "url": "https://forumcore.ai/ko/betterctrlv/",
+        "name": "BetterCtrlV — Ctrl+V를 길게 눌러 이전 복사본 선택",
+        "description": "Windows용 클립보드 기록. 평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.",
+        "inLanguage": "ko",
+        "isPartOf": {
+          "@id": "https://forumcore.ai/#website"
+        },
+        "about": {
+          "@id": "https://forumcore.ai/ko/betterctrlv/#app"
+        },
+        "mainEntity": {
+          "@id": "https://forumcore.ai/ko/betterctrlv/#app"
+        },
+        "breadcrumb": {
+          "@id": "https://forumcore.ai/ko/betterctrlv/#breadcrumb"
         }
-      ]
-    }
-  ]
-}
-</script>
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://forumcore.ai/ko/betterctrlv/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "ForumCore",
+            "item": "https://forumcore.ai/ko/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "BetterCtrlV",
+            "item": "https://forumcore.ai/ko/betterctrlv/"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <nav aria-label="주 메뉴">
@@ -150,8 +176,8 @@
   <main>
     <header class="intro">
       <h1>BetterCtrlV</h1>
-      <p class="meta">복사한 내용을 기억합니다. Ctrl+V를 길게 눌러 이전 복사본을 선택하세요. ForumCore 제품입니다.</p>
-      <p class="lead">Windows용 클립보드 기록입니다. 평소처럼 붙여넣으려면 Ctrl+V를 탭하고, 이전 복사본을 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다. Microsoft Store에서 구매하세요.</p>
+      <p class="meta">PC에 남는 클립보드 기록. Ctrl+V를 길게 눌러 이전 복사본을 고르세요. ForumCore 제품입니다.</p>
+      <p class="lead">평소처럼 붙여넣으려면 Ctrl+V를 짧게 누르고, 지금 클립보드와 최근 아홉 개 복사본 중에서 고르려면 길게 누르세요. 기록은 PC에 남으며 Windows 계정용으로 암호화됩니다.</p>
     </header>
       <div class="peek peek-lg" aria-hidden="true" dir="ltr">
         <div class="peek-row is-now is-files">
@@ -170,7 +196,7 @@
       <li><kbd>Ctrl+V</kbd>를 짧게 누르면 평소처럼 가장 최근 복사본이 붙여넣어집니다. <kbd>Ctrl+V</kbd>를 누른 채 현재 클립보드(V)와 최근 아홉 개 중에서 선택하세요. 최신 항목이 맨 위에 표시됩니다.</li>
       <li><kbd>1</kbd>–<kbd>9</kbd>, <kbd>S</kbd>와 <kbd>D</kbd>, 올리거나 클릭하여 행을 선택하세요. <kbd>K</kbd>로 한 줄을 삭제합니다. <kbd>L</kbd>을 길게 누르면 지워집니다. Ctrl에서 손을 떼면 있던 창에 붙여넣습니다.</li>
     </ol>
-    <p class="note">기록은 내 PC에 머물며 내 Windows 계정용으로 암호화됩니다. 암호 관리자에서 복사한 내용은 저장되지 않습니다. Microsoft Store에서 구매하세요.</p>
+    <p class="note">기록은 내 PC에 머물며 내 Windows 계정용으로 암호화됩니다. 암호 관리자에서 복사한 내용은 저장되지 않습니다. 15일 동안 써 본 뒤 Microsoft Store에서 구매하세요.</p>
   </main>
   <footer>
     <a href="/betterctrlv/privacy.html">개인정보</a>
